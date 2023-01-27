@@ -7,6 +7,10 @@
 /*
 *  Commons
 */
+.container-big {
+    width: 65vw;
+    margin: 0 auto;
+}
 .flex-container {
     display: flex;
 }
@@ -21,8 +25,22 @@ header nav  ul {
     cursor: pointer;
     background-color: #0061FF;
     border: 1px solid #0061FF;
+    padding: 15px 15px;
+    color: white;
+    
 }
 
+.col-left {
+    width: 30%;
+}
+
+.col-right {
+    width: 70%;
+}
+
+[class^="col-"] > img {
+    width: 100%;
+}
 /*
 *  Typo
 */
@@ -30,6 +48,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    font-size: 74px;
+    font-weight: 700;
+    letter-spacing: 8%;
+}
+
+h1, h2 {
+    margin-bottom: 70px;
+}
 
 /*
 *  Header
@@ -47,7 +74,7 @@ box-shadow: 0 0px 1px #939393 ;
     width: 100%;
 }
 
-
+/* Gestione spazi diversi tra link */
 nav.main-menu ul:first-child  li:not(:first-of-type) {
     padding: 25px 40px 25px 0;
 }
@@ -67,6 +94,7 @@ nav.main-menu div ul:last-child li {
 nav.main-menu div ul:last-child li:last-child {
     padding: 17px 20px 25px 0;
 }
+/* /Gestione spazi diversi tra link */
 
 /* Link header */
 header nav ul a {
@@ -94,4 +122,19 @@ header .btn {
 /* Banner */
 .banner {
     background-color: #B4D0E7;
+    margin-top: 80px;
+    padding-top: 100px;
+}
+
+.banner .flex-container {
+    column-gap: 20px;
+}
+
+.banner .btn {
+    margin: 34px 0;
+}
+
+.banner i {
+    font-size: 74px;
+    margin-top: 75px;
 }
