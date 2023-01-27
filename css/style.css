@@ -7,15 +7,91 @@
 /*
 *  Commons
 */
+.flex-container {
+    display: flex;
+}
+
+header nav  ul {
+    list-style: none;
+}
 
 
+
+.btn {
+    cursor: pointer;
+    background-color: #0061FF;
+    border: 1px solid #0061FF;
+}
 
 /*
 *  Typo
 */
-
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 /*
 *  Header
 */
+header {
+position: fixed;
+width: 100vw;
+top: 0;
+left: 0;
+box-shadow: 0 0px 1px #939393 ;
+}
+
+.main-menu {
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+nav.main-menu ul:first-child  li:not(:first-of-type) {
+    padding: 25px 40px 25px 0;
+}
+
+nav.main-menu ul:first-child li:first-of-type {
+    padding: 25px 40px 25px 20px;
+}
+
+nav.main-menu div ul:first-child li {
+    padding: 25px 40px 25px 0;
+}
+
+nav.main-menu div ul:last-child li {
+    padding: 25px 20px 25px 0;
+}
+
+nav.main-menu div ul:last-child li:last-child {
+    padding: 17px 20px 25px 0;
+}
+
+/* Link header */
+header nav ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul a:hover {
+    text-decoration: underline solid #000;
+    text-underline-offset: 1em;
+}
+
+header .btn {
+    padding: 10px 16px;
+    color: #fff;
+}
+/* /Link header */
+
+
+
+/*
+*  Main sito
+*/
+
+/* Banner */
+.banner {
+    background-color: #B4D0E7;
+}
