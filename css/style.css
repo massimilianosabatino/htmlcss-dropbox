@@ -5,21 +5,60 @@
 }
 
 /*
+**********
+DEBUG
+**********
+*/
+.debug .col {
+    background-color: red;
+
+}
+
+.debug .margin-reset {
+
+
+}
+
+.debug .flex-container.margin-reset{
+    height: 500px;
+
+}
+
+
+
+
+
+
+
+
+/*
 *  Commons
 */
 .container-big {
     width: 65vw;
     margin: 0 auto;
 }
+
+.container-small {
+    width: 52vw;
+    margin: 0 auto;
+}
+
 .flex-container {
     display: flex;
+}
+
+.margin-reset {
+    margin: 0 -25px;
 }
 
 header nav  ul {
     list-style: none;
 }
 
-
+ul > li {
+    list-style-position: inside;
+}
 
 .btn {
     cursor: pointer;
@@ -38,9 +77,25 @@ header nav  ul {
     width: 70%;
 }
 
+.col {
+    width: calc(100% / 3 - 50px);
+    margin: 50px 25px 0 25px;
+}
+
+.col-wrap {
+    flex-wrap: wrap;
+}
+
 [class^="col-"] > img {
     width: 100%;
 }
+
+.tab-content {
+    padding: 0 30px;
+}
+
+
+
 /*
 *  Typo
 */
@@ -54,8 +109,29 @@ h1 {
     letter-spacing: 8%;
 }
 
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -1%;
+    margin-bottom: 35px;
+}
 h1, h2 {
     margin-bottom: 70px;
+}
+
+.tab-content {
+    font-size: 14px;
 }
 
 /*
@@ -63,9 +139,11 @@ h1, h2 {
 */
 header {
 position: fixed;
+z-index: 100;
 width: 100vw;
 top: 0;
 left: 0;
+background-color: #fff;
 box-shadow: 0 0px 1px #939393 ;
 }
 
@@ -137,4 +215,60 @@ header .btn {
 .banner i {
     font-size: 74px;
     margin-top: 75px;
+}
+
+/* Piani acquistabili */
+.select-bill label {
+    margin-right: 45px;
+}
+
+.section-bill .flex-container.col-wrap .col {
+    flex-grow: 1;
+    border: 1px solid #ededee;
+}
+
+.category {
+    border-bottom: 1px solid #ededee;
+    text-align: center;
+    font-size: 14px;
+    line-height: 39px;
+    margin-bottom: 35px;
+}
+
+.tab-content > span {
+    display: block;
+    color: #9cadb7;
+    margin-top: 10px;
+}
+
+.tab-feature {
+    margin: 50px 0;
+}
+
+.tab-feature li:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.tab-content > .btn {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.tab-content > hr {
+    margin: 35px 82% 50px 0;
+    color: #939393;
+}
+
+.tab-highlights li:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.tab-feature li,
+.tab-highlights li {
+    text-indent: -1em;
+    padding-left: 1em;
+}
+
+.tab-highlights li {
+    list-style-type: '✔️';
 }
