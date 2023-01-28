@@ -218,6 +218,9 @@ header .btn {
 }
 
 /* Piani acquistabili */
+.section-bill {
+    margin-top: 160px;
+}
 .select-bill label {
     margin-right: 45px;
 }
@@ -233,6 +236,12 @@ header .btn {
     font-size: 14px;
     line-height: 39px;
     margin-bottom: 35px;
+}
+
+.category > img {
+    max-width: 15px;
+    max-height: 15px;
+    vertical-align: middle;
 }
 
 .tab-content > span {
@@ -256,19 +265,49 @@ header .btn {
 
 .tab-content > hr {
     margin: 35px 82% 50px 0;
-    color: #939393;
+    color: #ededee;
+    opacity: 0.5;
 }
 
 .tab-highlights li:not(:last-child) {
     margin-bottom: 25px;
 }
 
+.tab-highlights li:last-child {
+    margin-bottom: 50px;
+}
+
 .tab-feature li,
 .tab-highlights li {
-    text-indent: -1em;
-    padding-left: 1em;
+    text-indent: -1.6em;
+    padding-left: 1.6em;
+}
+
+.tab-feature li::marker,
+.tab-highlights li::marker {
+    font-size: 2em;
+}
+
+.tab-feature li.user-ico {
+    list-style-image: url(../img/user-small.svg);
+}
+.tab-feature li.folder-ico {
+    list-style-image: url(../img/folder-small.svg);
+}
+.tab-feature li.share-ico {
+    list-style-image: url(../img/share-small.svg);
 }
 
 .tab-highlights li {
-    list-style-type: '✔️';
+    list-style-image: url(../img/check-small.svg);
 }
+
+/*.tab-feature li {
+    list-style-image: url(../img/user-small.svg);
+    /* padding-inline-start: 1em;
+
+}
+*/
+
+
+
