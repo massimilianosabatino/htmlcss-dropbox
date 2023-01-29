@@ -11,20 +11,12 @@ DEBUG
 */
 .debug .col {
     background-color: red;
-
 }
 
-.debug .margin-reset {
-
-
-}
 
 .debug .flex-container.margin-reset{
     height: 500px;
-
 }
-
-
 
 
 
@@ -49,7 +41,7 @@ DEBUG
 }
 
 .margin-reset {
-    margin: 0 -25px;
+    margin: 0 -20px;
 }
 
 header nav  ul {
@@ -65,21 +57,26 @@ ul > li {
     background-color: #0061FF;
     border: 1px solid #0061FF;
     padding: 15px 15px;
-    color: white;
-    
+    color: white;   
 }
 
-.col-left {
+.btn.white {
+    background-color: transparent;
+    color: #626262;
+    border: 1px solid #626262;
+}
+
+.col-two-small {
     width: 30%;
 }
 
-.col-right {
+.col-two-big {
     width: 70%;
 }
 
 .col {
-    width: calc(100% / 3 - 50px);
-    margin: 50px 25px 0 25px;
+    width: calc(100% / 3 - 40px);
+    margin: 50px 20px 0 20px;
 }
 
 .col-wrap {
@@ -91,7 +88,7 @@ ul > li {
 }
 
 .tab-content {
-    padding: 0 30px;
+    padding: 0 25px;
 }
 
 
@@ -105,17 +102,18 @@ body {
 
 h1 {
     font-size: 74px;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 8%;
 }
 
 h2 {
     font-size: 40px;
     font-weight: 700;
+    margin-bottom: 70px;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 700;
     margin-bottom: 25px;
 }
@@ -126,13 +124,12 @@ h4 {
     letter-spacing: -1%;
     margin-bottom: 35px;
 }
-h1, h2 {
-    margin-bottom: 70px;
-}
 
 .tab-content {
-    font-size: 14px;
+    font-size: 13px;
 }
+
+
 
 /*
 *  Header
@@ -152,7 +149,7 @@ box-shadow: 0 0px 1px #939393 ;
     width: 100%;
 }
 
-/* Gestione spazi diversi tra link */
+/*** Gestione spazi diversi tra link ***/
 nav.main-menu ul:first-child  li:not(:first-of-type) {
     padding: 25px 40px 25px 0;
 }
@@ -172,24 +169,24 @@ nav.main-menu div ul:last-child li {
 nav.main-menu div ul:last-child li:last-child {
     padding: 17px 20px 25px 0;
 }
-/* /Gestione spazi diversi tra link */
+/*** /Gestione spazi diversi tra link ***/
 
-/* Link header */
+/*** Link header ***/
 header nav ul a {
     text-decoration: none;
     color: #000;
 }
 
 header nav ul a:hover {
-    text-decoration: underline solid #000;
-    text-underline-offset: 1em;
+    text-decoration: underline 2px solid #939393;
+    text-underline-offset: 2.3em;
 }
 
 header .btn {
     padding: 10px 16px;
     color: #fff;
 }
-/* /Link header */
+/*** /Link header ***/
 
 
 
@@ -197,7 +194,7 @@ header .btn {
 *  Main sito
 */
 
-/* Banner */
+/*** Banner ***/
 .banner {
     background-color: #B4D0E7;
     margin-top: 80px;
@@ -206,6 +203,8 @@ header .btn {
 
 .banner .flex-container {
     column-gap: 20px;
+    position: relative;
+    top: 75px;
 }
 
 .banner .btn {
@@ -213,11 +212,21 @@ header .btn {
 }
 
 .banner i {
-    font-size: 74px;
-    margin-top: 75px;
+    font-size: 40px;
+    margin-top: 25px;
+    color: #000;
 }
 
-/* Piani acquistabili */
+.banner i > a {
+    color: #000;
+}
+
+/* .banner i > a:visited {
+    color: #000;
+} */
+
+
+/*** Piani acquistabili ***/
 .section-bill {
     margin-top: 160px;
 }
@@ -305,9 +314,66 @@ header .btn {
 /*.tab-feature li {
     list-style-image: url(../img/user-small.svg);
     /* padding-inline-start: 1em;
-
 }
 */
 
+.section-bill div.flex-container div.col:last-child > .tab-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    max-height: 250px;
+}
 
+.section-bill div.flex-container div.col:last-child > .tab-content > h3 {
+   width: calc(100% / 3 * 2);
+    flex: 1 1;
+}
 
+.section-bill div.flex-container div.col:last-child > .tab-content > strong {
+    width: calc(100% / 3 * 2);
+    flex: 1 1;
+    margin-bottom: 50px;
+}
+
+.section-bill div.flex-container div.col:last-child > .tab-content > p {
+    width: calc(100% / 3 * 2);
+    flex: 1 1;
+    margin-bottom: 30px;
+}
+
+.section-bill div.flex-container div.col:last-child > .tab-content > button {
+    width: calc(100% / 3 - 75px);
+    flex: 0 1;
+}
+
+/*** Sezione partner ***/
+.partner-comp {
+    margin-top: 150px;
+    column-gap: 50px;
+}
+
+.partner-comp .col-two-small > h3 {
+    margin-top: 50px;
+}
+
+.partner-comp .col-two-small p {
+    margin-bottom: 25px;
+}
+
+.operation-comp {
+    margin-top: 50px;
+}
+
+.operation-comp .col img {
+    width: 100%;
+}
+
+/*** Sezione clienti ***/
+.clients {
+    margin-top: 200px;
+}
+
+.clients-more {
+    margin-bottom: 140px;
+}
