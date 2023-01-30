@@ -84,7 +84,8 @@ ul > li {
     flex-wrap: wrap;
 }
 
-[class^="col-"] > img {
+[class^="col-"] > img,
+[class^="box"] > img {
     width: 100%;
     display: block;
 }
@@ -383,4 +384,47 @@ main {
 
 .clients-more {
     margin-bottom: 140px;
+}
+
+/*******PROVA DA RIVEDERE CON CALMA ****/
+/* .clients-tabs {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 640px;
+}
+
+.box {
+    flex: 1 1;
+    width: calc(100vw / 6);
+}
+
+.box-big {
+    flex: 1 1;
+    width: calc((100vw / 6) * 2);
+} */
+
+.clients-tabs {
+
+}
+.box {
+    width: calc(100vw / 3);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 640px;
+}
+.box img {
+    width: 100%;
+}
+.big {
+    display: flex;
+}
+.big img {
+    width: 100%;
+}
+
+.single {
+    width: 50%;
+    height: 50%;
+    background-color: red;
 }
