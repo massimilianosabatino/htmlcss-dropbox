@@ -85,7 +85,7 @@ ul > li {
 }
 
 [class^="col-"] > img,
-[class^="box"] > img {
+[class^="box"] img {
     width: 100%;
     display: block;
 }
@@ -94,6 +94,9 @@ ul > li {
     padding: 0 25px;
 }
 
+.fx-invert-color img {
+    filter: invert(100%);
+}
 
 
 /*
@@ -408,23 +411,79 @@ main {
 }
 .box {
     width: calc(100vw / 3);
-    display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
     height: 640px;
 }
-.box img {
-    width: 100%;
-}
+
 .big {
-    display: flex;
+    background-color: #F5F5F5;
+    padding: 45px;
 }
-.big img {
-    width: 100%;
+
+.big > img {
+    max-width: 50%;
+    max-height: 200px;
+}
+
+.big > hr {
+    margin: 40px 82% 40px 0;
+    color: #ededee;
+    opacity: 0.5;
+}
+
+.big > blockquote {
+    margin-bottom: 50px;
+}
+
+.big > cite {
+    font-style: normal;
 }
 
 .single {
     width: 50%;
     height: 50%;
-    background-color: red;
+    justify-content: center;
+    align-items: center;
 }
+
+.single:hover {
+    border: 15px solid rgba(255, 255, 255, 0.5);
+}
+
+.single img {
+    flex: 0 1 52%;
+}
+
+#designit {
+    background-color: #A2D39B;
+}
+
+#arizona {
+    background-color: #61082B;
+}
+
+#uni-florida {
+    background-color: #0093CE;
+}
+
+#topps {
+    background-color: #FF1C1C;
+}
+
+#world-bicycle {
+    background-color: #FF1C1C;
+}
+
+#hearst {
+    background-color: #B4D0E7;
+}
+
+#lonely-planet {
+    background-color: #0D2481;
+}
+
+#clear-channel {
+    background-color: #FFD830;
+}
+
+
