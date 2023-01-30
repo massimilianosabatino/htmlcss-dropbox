@@ -60,12 +60,23 @@ ul > li {
     padding: 15px 15px;
     color: white;
     font-size: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #3582ff;
 }
 
 .btn.white {
     background-color: #fff;
     color: #626262;
     border: 1px solid #626262;
+}
+
+.btn.white:hover {
+    background-color: rgb(231, 231, 231);
+    color: #3f3f3f;
+    border: 1px solid #3f3f3f;
 }
 
 .col-two-small {
@@ -521,14 +532,31 @@ main {
 }
 .question {
     border-top: 1px solid #c5c5c5;
-    border-bottom: 1px solid #c5c5c5;
-    padding: 40px 0;
-    justify-content: space-between;
+    padding: 40px 40px 0 0;
+    justify-content: space-between; 
 }
 
-#faq .question > p {
-    font-weight: 800;
+.question:last-child {
+    border-bottom: 1px solid #c5c5c5;
+}
 
+#faq .question > p:not(.faq-hidden) {
+    font-weight: 800;
+}
+
+.faq-hidden {
+    display: contents;
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+    
+}
+
+.question:hover .faq-hidden {
+    display: block;
+    margin-top: 1em;
+    padding-bottom: 40px;
+    color: inherit;
 }
 
 
@@ -570,10 +598,14 @@ hr {
     color: #6a6a6a;
 }
 
-.lang-selector > small {
+.lang-selector small {
     margin: 0 5px 0 10px;
 }
 
-.lang-selector > .fa-caret-up {
+.lang-selector .fa-caret-up {
     font-size: 0.7em;
+}
+
+.lang-selector > a:visited {
+    color: #6a6a6a;
 }

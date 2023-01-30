@@ -20,7 +20,7 @@
     <header>
         <nav class="flex-container main-menu">
             <ul class="flex-container">
-                <li><a href="#"><img src="img/logo-small.png" #="logo" alt="logo dropbox"></a></li>
+                <li><a href="#"><img src="img/logo-small.png" id="logo" alt="logo dropbox"></a></li>
                 <li><a href="#">Perchè Dropbox</a></li>
                 <li><a href="#">Funzioni</a></li>
                 <li><a href="#">Piano e prezzi</a></li>
@@ -41,7 +41,7 @@
     <!-- Main sito -->
     <main>
         <!-- Banner principale -->
-        <section class="container-full banner">
+        <section id="top-home" class="container-full banner">
             <div class="container-big">
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 <div class="flex-container">
@@ -49,7 +49,7 @@
                         <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
                         <button class="btn">Inizia la tua prova gratuita</button>
                         <p>Annulla in qualsiasi momento</p>
-                        <a href="#logo"><i class="fa-solid fa-arrow-down"></i></a>
+                        <a href="#call-to-action"><i class="fa-solid fa-arrow-down"></i></a>
                     </div>
                     <div class="col-two-big">
                         <img src="img/jumbo.png" alt="Schermata applicazione">
@@ -309,17 +309,20 @@
         <!-- Sezione FAQ -->
         <section id="faq" class="container-small">
             <h2>Domande frequenti</h2>
-            <div class="question flex-container">
+            <div class="question flex-container col-wrap">
                 <p>Qual è la differenza tra dropbox Business Standard e Dropbox Business Advanced?</p>
                 <i class="fa-solid fa-chevron-down"></i>
+                <p class="faq-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore repudiandae, aliquid numquam saepe molestiae sit optio? Iste expedita exercitationem pariatur fuga esse, minima ad ea laboriosam numquam. Omnis, eos!</p>
             </div>
-            <div class="question flex-container">
+            <div class="question flex-container col-wrap">
                 <p>Qual è la differenza tra dropbox Business Standard e Dropbox Business Advanced?</p>
                 <i class="fa-solid fa-chevron-down"></i>
+                <p class="faq-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore repudiandae, aliquid numquam saepe molestiae sit optio? Iste expedita exercitationem pariatur fuga esse, minima ad ea laboriosam numquam. Omnis, eos!</p>
             </div>
-            <div class="question flex-container">
+            <div class="question flex-container col-wrap">
                 <p>Qual è la differenza tra dropbox Business Standard e Dropbox Business Advanced?</p>
                 <i class="fa-solid fa-chevron-down"></i>
+                <p class="faq-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur labore repudiandae, aliquid numquam saepe molestiae sit optio? Iste expedita exercitationem pariatur fuga esse, minima ad ea laboriosam numquam. Omnis, eos!</p>
             </div>
         </section>
         <!-- /Sezione FAQ -->
@@ -332,7 +335,7 @@
                 <div class="">
                     <h3>Dropbox</h3>
                     <ul>
-                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#top-home">Applicazione desktop</a></li>
                         <li><a href="#">Perchè Dropbox</a></li>
                         <li><a href="#">Piani</a></li>
                         <li><a href="#">Sicurezza</a></li>
@@ -383,7 +386,7 @@
             <hr>
             <div class="lang-selector">
                 <i class="fa-solid fa-earth-americas"></i>
-                <small>Italiano</small><i class="fa-solid fa-caret-up"></i>
+                <a href="#"><small>Italiano</small><i class="fa-solid fa-caret-up"></i></a>
             </div>
         </div>
     </footer>
