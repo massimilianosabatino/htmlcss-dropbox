@@ -44,7 +44,8 @@ DEBUG
     margin: 0 -20px;
 }
 
-header nav  ul {
+header nav  ul,
+footer nav ul {
     list-style: none;
 }
 
@@ -524,4 +525,51 @@ main {
 #faq .question > p {
     font-weight: 800;
 
+}
+
+
+
+/*
+*  Footer
+*/
+footer {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    border-top: 2px solid #7a7a7a;
+    background-color: #000;
+    color: #fff;
+}
+
+footer nav.flex-container {
+    justify-content: space-between;
+}
+
+footer nav ul li {
+    margin-bottom: 15px;
+}
+
+footer nav ul a {
+    text-decoration: none;
+}
+
+footer nav ul a:visited {
+    color: #fff;
+}
+
+hr {
+    margin: 115px 0 50px 0;
+    width: 20%;
+    color: #6a6a6a;
+}
+
+.lang-selector {
+    color: #6a6a6a;
+}
+
+.lang-selector > small {
+    margin: 0 5px 0 10px;
+}
+
+.lang-selector > .fa-caret-up {
+    font-size: 0.7em;
 }
