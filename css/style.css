@@ -487,3 +487,31 @@ main {
 }
 
 
+/*** Sezione call to action ***/
+#call-to-action {
+    background-color: #B4D0E7;
+}
+
+#call-to-action .flex-container .col:first-child {
+    flex-grow: 2;
+}
+
+#call-to-action > .container-small {
+    padding: 125px 0;
+}
+
+
+
+/*** Sezione FAQ ***/
+#faq {
+    margin-top: 150px;
+}
+.question {
+    border-top: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+#faq .question > p {
+    font-weight: 800;
+    margin: 40px 0;
+}
