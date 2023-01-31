@@ -62,10 +62,14 @@
         <section class="container-small section-bill">
             <h2>Trova il piano business che fa per te</h2>
             <div class="select-bill">
-                <input type="radio" id="monthly" name="billing_plan" value="monthly" checked="checked">
-                <label for="monthly">Fatturazione mensile</label>
-                <input type="radio" id="annual" name="billing_plan" value="annual">
-                <label for="annual">Fatturazione annuale</label>
+                <label class="radio-cont" for="monthly">Fatturazione mensile
+                    <input type="radio" id="monthly" name="billing_plan" value="monthly" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-cont" for="annual">Fatturazione annuale
+                    <input type="radio" id="annual" name="billing_plan" value="annual">
+                    <span class="checkmark"></span>
+                </label>
             </div>
             <div class="flex-container margin-reset col-wrap">
                 <!-- Piano singolo -->
