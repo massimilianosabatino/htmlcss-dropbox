@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropbox Piani e Prezzi</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!-- /Google Fonts -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /Font Awesome -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="piani secondary">
+    <!-- Menù di navigazione -->
+    <header>
+        <nav class="flex-container main-menu">
+            <ul class="flex-container">
+                <li><a href="index.html"><img src="img/logo-small.png" id="logo" alt="logo dropbox"></a></li>
+                <li><a href="#">Perchè Dropbox</a></li>
+                <li><a href="funzioni.html">Funzioni</a></li>
+            </ul>
+            <div class="flex-container">
+                <ul class="flex-container">
+                    <li><a href="#">Supporto</a></li>
+                    <li><a href="#">Contatta l'ufficio vendite</a></li>
+                </ul>
+                <ul class="flex-container">
+                    <li><a href="#">Accedi</a></li>
+                    <li><button class="btn">Inizia</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- /Menù di navigazione -->
+    <main>
+         <section class="container-small section-bill">
+            <h2>Trova il piano business che fa per te</h2>
+            <div class="select-bill">
+                <label class="radio-cont" for="monthly">Fatturazione mensile
+                    <input type="radio" id="monthly" name="billing_plan" value="monthly" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-cont" for="annual">Fatturazione annuale
+                    <input type="radio" id="annual" name="billing_plan" value="annual">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="flex-container margin-reset col-wrap">
+                <!-- Piano singolo -->
+                <div class="col">
+                    <div class="category">
+                        <img src="img/user.svg" alt="Single user">
+                        <span>Singolo</span>
+                    </div>
+                    <div class="tab-content">
+                        <h3>Professional</h3>
+                        <strong>€ 12.00</strong>
+                        <span class="price-type">/mese</span>
+                        <ul class="tab-feature">
+                            <li class="user-ico">1 utente</li>
+                            <li class="folder-ico">5 TB di spazio di archiviazione sicuro</li>
+                            <li class="share-ico">Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                        </ul>
+                        <button class="btn">Prova gratis per 30 giorni</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                        <hr>
+                        <h4>Punti Salienti del piano</h4>
+                        <ul class="tab-highlights">
+                            <li>Invia file fino a 100 GB con Dropbox Transfert</li>
+                            <li>Cartelle offline su dispositivi mobili</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /Piano singolo -->
+                <!-- Piano Team -->
+                <div class="col">
+                    <div class="category">
+                        <img src="img/people-team.svg" alt="Team user">
+                        <span>Team</span>
+                    </div>
+                    <div class="tab-content">
+                        <h3>Advanced</h3>
+                        <strong>€ 18.00</strong>
+                        <span class="price-type">/utente/mese</span>
+                        <ul class="tab-feature">
+                            <li class="user-ico">3 o più utenti</li>
+                            <li class="folder-ico">Tutto lo spazio di cui ha bisogno il tuo team</li>
+                            <li class="share-ico">Sofisticate funzioni di controllo e per tenere al sicurotutti i file del tuo team</li>
+                        </ul>
+                        <button class="btn">Prova gratis per 30 giorni</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                        <hr>
+                        <h4>Punti Salienti del piano</h4>
+                        <ul class="tab-highlights">
+                            <li>Invia file fino a 100 GB con Dropbox Transfert</li>
+                            <li>Cartelle offline su dispositivi mobili</li>
+                            <li>Risparmio del 50% rispetto alle iscrizioni singole</li>
+                            <li>Possibilità di inserire nuovi membri del team</li>
+                            <li>Gestione dei permessi in base ai ruoli</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Piano Azienda -->
+                <div class="col">
+                    <div class="category">
+                        <img src="img/building.svg" alt="Azienda user">
+                        <span>Azienda</span>
+                    </div>
+                    <div class="tab-content">
+                        <h3>Enterprise</h3>
+                        <strong>Contattaci</strong>
+                        <span class="price-type">/mese</span>
+                        <ul class="tab-feature">
+                            <li class="user-ico">10 o più utenti</li>
+                            <li class="folder-ico">Soluzioni personalizzabili per la tua azienda</li>
+                            <li class="share-ico">Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
+                        </ul>
+                        <button class="btn">Contattaci</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                        <hr>
+                        <h4>Punti Salienti del piano</h4>
+                        <ul class="tab-highlights">
+                            <li>Invia file fino a 100 GB con Dropbox Transfert</li>
+                            <li>Cartelle offline su dispositivi mobili</li>
+                            <li>Possibilità di personalizzazione totale</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /Piano Azienda -->
+                <!-- Colonna singola Enterprise -->
+                <div class="col">
+                    <div class="category">
+                        <img src="img/building.svg" alt="Azienda user">
+                        <span>Team</span>
+                    </div>
+                    <div class="tab-content">
+                        <h3 id="enterprise-anchor">Enterprise</h3>
+                        <strong>Contatta l'ufficio vendite per i prezzi</strong>
+                        <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
+                        <button class="btn">Contatta l'ufficio vendite</button>
+                    </div>
+                </div>
+                <!-- Colonna singola Enterprise -->
+            </div>
+        </section>
+        <!-- /Sezione piani tariffari -->
+         <!-- Sezione call to action -->
+        <section id="call-to-action" class="container-full">
+            <div class="container-small">
+                <div class="flex-container col-wrap margin-reset">
+                    <div class="col">
+                        <h2>Porta Dropbox Business nella tua azienda</h2>
+                    </div>
+                    <div class="col">
+                        <button class="btn white"> Inizia la tua prova gratuita</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Sezione call to action -->
+    </main>
+     <!-- Footer -->
+    <footer>
+        <div class="container-big">
+            <nav class="flex-container">
+                <div class="">
+                    <h3>Dropbox</h3>
+                    <ul>
+                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#">Perchè Dropbox</a></li>
+                        <li><a href="piani.html">Piani</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="funzioni.html">Funzioni</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h3>Prodotti</h3>
+                    <ul>
+                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#">Perchè Dropbox</a></li>
+                        <li><a href="piani.html">Piani</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="funzioni.html">Funzioni</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h3>Azienda</h3>
+                    <ul>
+                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#">Perchè Dropbox</a></li>
+                        <li><a href="piani.html">Piani</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="funzioni.html">Funzioni</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h3>Supporto</h3>
+                    <ul>
+                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#">Perchè Dropbox</a></li>
+                        <li><a href="piani.html">Piani</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="funzioni.html">Funzioni</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h3>Contatti</h3>
+                    <ul>
+                        <li><a href="#">Applicazione desktop</a></li>
+                        <li><a href="#">Perchè Dropbox</a></li>
+                        <li><a href="piani.html">Piani</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="funzioni.html">Funzioni</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <hr>
+            <div class="lang-selector">
+                <i class="fa-solid fa-earth-americas"></i>
+                <a href="#"><small>Italiano</small><i class="fa-solid fa-caret-up"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+</html>
