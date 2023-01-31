@@ -27,22 +27,23 @@ DEBUG
 *  Commons
 */
 .container-big {
-    width: 65vw;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .container-small {
-    width: 52vw;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .flex-container {
     display: flex;
+    justify-content: space-between;
 }
 
-.margin-reset {
+/* .margin-reset {
     margin: 0 -20px;
-}
+} */
 
 header nav  ul,
 footer nav ul {
@@ -88,8 +89,8 @@ ul > li {
 }
 
 .col {
-    width: calc(100% / 3 - 40px);
-    margin: 50px 20px 0 20px;
+    width: 30%;
+    margin-top: 50px;
 }
 
 .col-wrap {
@@ -103,7 +104,7 @@ ul > li {
 }
 
 .tab-content {
-    padding: 0 25px;
+    padding: 0 30px;
 }
 
 .fx-invert-color img {
@@ -153,7 +154,7 @@ h4 {
 header {
 position: fixed;
 z-index: 100;
-width: 100vw;
+width: 100%;
 top: 0;
 left: 0;
 background-color: #fff;
@@ -223,9 +224,13 @@ main {
 }
 
 .banner .flex-container {
-    column-gap: 20px;
+
     position: relative;
     top: 75px;
+}
+
+.banner .col-two-small {
+    position: relative;
 }
 
 .banner .btn {
@@ -240,6 +245,9 @@ main {
 
 .banner i > a {
     color: #000;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
 }
 
 /* .banner i > a:visited {
@@ -257,24 +265,28 @@ main {
 }
 
 .section-bill .flex-container.col-wrap .col {
-    flex-grow: 1;
     border: 1px solid #ededee;
 }
 
+.section-bill .flex-container.col-wrap .col:last-child {
+    flex-grow: 1;
+}
 .category {
     border-bottom: 1px solid #ededee;
     text-align: center;
     font-size: 0.87em;
-    line-height: 39px;
+    line-height: 2.6em;
     margin-bottom: 35px;
 }
 
 .category > img {
-    max-width: 15px;
     max-height: 15px;
     vertical-align: middle;
 }
 
+.tab-content > ul {
+    min-height: 250px;
+}
 .tab-content > span {
     display: block;
     color: #9cadb7;
@@ -282,7 +294,7 @@ main {
 }
 
 .tab-feature {
-    margin: 50px 0;
+    margin-top: 50px;
 }
 
 .tab-feature li:not(:last-child) {
@@ -295,7 +307,8 @@ main {
 }
 
 .tab-content > hr {
-    margin: 40px 82% 50px 0;
+    margin: 40px 0% 50px 0;
+    width: 45px;
     color: #ededee;
     opacity: 0.5;
 }
@@ -420,10 +433,9 @@ main {
 
 .clients-tabs {
     aspect-ratio: 3/1;
-    align-items: flex-end;
 }
 .box {
-    width: calc(100vw / 3);
+    width: calc(100% / 3);
     align-items: flex-start;
     max-height: 640px;
     aspect-ratio: 1/1;
@@ -432,7 +444,7 @@ main {
 .big {
     background-color: #F5F5F5;
     padding: 2%;
-    aspect-ratio: 1/1;
+    overflow: auto;
 }
 
 .big > img {
@@ -509,8 +521,9 @@ main {
 }
 
 #call-to-action .flex-container .col:first-child {
-    flex-grow: 2;
-    padding-right: 20%;
+    /* flex-grow: 2; */
+    /* padding-right: 20%; */
+    flex-basis: 60%;
 }
 
 #call-to-action > .container-small {
@@ -557,6 +570,11 @@ main {
     margin-top: 1em;
     padding-bottom: 40px;
     color: inherit;
+}
+
+.question:hover > i {
+    rotate: 180deg;
+    transition: rotate 0.2s ease-in;
 }
 
 
